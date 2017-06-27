@@ -12,7 +12,7 @@ public class Test {
 	public static void main(String[] args) throws Exception {
 
 		// 构造一个用户词典
-		Forest forest = Library.makeForest("library/computer2.dic");
+		Forest forest = Library.makeForest("library/default2.dic");
 		forest = new Forest();
 
 		// 增加新词,中间按照'\t'隔开

@@ -35,12 +35,11 @@ public class DicLibrary {
 
 	static {
 		for (Entry<String, String> entry : MyStaticValue.ENV.entrySet()) {
-			if (entry.getKey().startsWith(DEFAULT)) {
+			if (entry.getKey().startsWith(DEFAULT_NATURE)) {
 				put(entry.getKey(), entry.getValue());
 			}
 		}
-		putIfAbsent(DEFAULT, "library/default.dic");
-		putIfAbsent(DEFAULT_NATURE, "library/computer2.dic");
+		putIfAbsent(DEFAULT, "library/default2.dic");
 		Forest forest = get();
 		if (forest == null) {
 			put(DEFAULT, DEFAULT, new Forest());
